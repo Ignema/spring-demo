@@ -34,15 +34,17 @@ public class SamplePersonDataAccessService implements PersonDao {
     @Override
     public boolean deletePersonById(UUID id) {
 
-        Optional<Person> person = selectPersonById(id);
+        return false;
 
-        if(person.isEmpty()) {
-            return false;
-        }
-
-        db.remove(person.get());
-
-        return true;
+//        Optional<Person> person = selectPersonById(id);
+//
+//        if(person.isEmpty()) {
+//            return false;
+//        }
+//
+//        db.remove(person.get());
+//
+//        return true;
     }
 
     @Override
